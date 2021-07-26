@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Blanja</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm fixed-top">
+            <div class="container justify-content-around">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logo.png" alt=""  width="90" height="35">
+                </a>
+                <div class="collapse navbar-collapse justify-content-between">
+                    <form class="search">
+                        <div class="input-group">
+                            <input class="form-control form-control-sm rounded-pill px-3" type="search"
+                                placeholder="Search" aria-label="Search">
+                            <span class="material-icons-outlined p-2 text-secondary">search</span>
+                        </div>
+                    </form>
+                    <button class="btn btn-outline-secondary btn-sm rounded pb-0 mx-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"><span class="material-icons-outlined">filter_alt</span></button>
+                    
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary" aria-current="page" href="./bag.html"><span
+                                    class="material-icons-outlined mt-2">
+                                    shopping_cart
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">
+                                <button type="button" class="btn btn-danger btn-sm rounded-pill px-4">Login</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button type="button"
+                                    class="btn btn-outline-secondary btn-sm rounded-pill px-4">Signup</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-bottom navbar-light bg-light d-block d-md-none fixed-bottom">
+            <ul class="nav d-flex justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary p-0 nav-icon text-center" aria-current="page" href="#">
+                        <div class="text-center">
+                            <span class="icon-24 material-icons-outlined" id="exampleFormControlInput1">
+                                home
+                            </span>
+                        </div>
+                        <small class="nav-title link-active">Home</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary p-0 nav-icon text-center" aria-current="page" href="#">
+                        <div class="text-center">
+                            <span class="icon-24 material-icons-outlined">
+                                shopping_cart
+                            </span>
+                        </div>
+                        <small class="nav-title">Shop</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary p-0 nav-icon text-center" href="./bag.html">
+                        <div class="text-center">
+                            <span class="icon-24 material-icons-outlined">
+                                local_mall
+                            </span>
+                        </div>
+                        <small class="nav-title">Bag</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary p-0 nav-icon text-center" href="#">
+                        <div class="text-center">
+                            <span class="icon-24 material-icons-outlined">
+                                favorite_border
+                            </span>
+                        </div>
+                        <small class="nav-title">Favorites</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary p-0 nav-icon text-center" href="./">
+                        <div>
+                            <span class="icon-24 material-icons-outlined">
+                                person_outline
+                            </span>
+                        </div>
+                        <small class="nav-title">Profile</small>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- slider trends -->
+        <section class="container">
+            <div class="my-3">
+                <div class="owl-carousel owl-theme trend">
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/iklan4.webp" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/iklan5.webp" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/iklan1.jpg" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/iklan2.webp" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/iklan3.webp" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider trends -->
+
+        <!-- slider category section  -->
+        <section class="container">
+            <div class="my-5">
+                <div class="my-3">
+                    <h3 class="text-bold m-0">Category</h3>
+                    <small class="text-secondary">What are you currently looking for</small>
+                </div>
+                <div class="owl-carousel owl-theme category">
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/tshirt.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/jacket.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/formalsuit.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/pants.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/shorts.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/shoes.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/handbag.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="./assets/img/accessories.png" class="card-img" alt="tshirt.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider category section  -->
+
+        <!-- section product card  -->
+        <section class="container">
+            <div>
+                <h3 class="text-bold">New</h3>
+                <small class="text-secondary">You’ve never seen it before!</small>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">kaos pria full print/ kaos pria motif</h6>
+                            <div class="price">Rp19.900</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">T-shirt Astronaut</h6>
+                            <div class="price">Rp29.302</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos lengan panjang</h6>
+                            <div class="price">Rp120.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos polos pria premium</h6>
+                            <div class="price">Rp15.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos5.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">T-shirt sail away</h6>
+                            <div class="price">Rp29.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos custom sablon 1 baris</h6>
+                            <div class="price">Rp40.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos7.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Baju distro pria wanita</h6>
+                            <div class="price">Rp31.939</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos8.webp" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos polos putih combed</h6>
+                            <div class="price">Rp23.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos9.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos polos KPM premium</h6>
+                            <div class="price">Rp39.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos10.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos polos pria premium</h6>
+                            <div class="price">Rp.15.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos11.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">kaos polos oversize</h6>
+                            <div class="price">Rp68.400</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 col-lg-2 my-3">
+                    <div class="card shadow-sm">
+                        <img src="./assets/img/kaos12.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-medium">Kaos pria distro morten</h6>
+                            <div class="price">Rp42.000</div>
+                            <small class="brand text-secondary">Zalora Cloth</small>
+                            <div class="d-flex">
+                                <div class="star">
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                    <span class="material-icons-outlined">star</span>
+                                </div>
+                                <span class="review">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section product card  -->
+    </main>
+    <footer class="d-none d-md-block">
+        <h6 class="text-center p-3">copyright<span class="material-icons-outlined">copyright</span>Belanja-2021</h6>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex">
+                        <button type="button" class="btn-close m-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title m-1 text-medium" id="exampleModalLabel">Filter</h5>
+                    </div>
+                </div>
+                <div class="modal-body modal-filter">
+                    <div class="m-4 colors">
+                        <h5 class="text-medium">Colors</h5>
+                        <div class="form-check form-check-inline p-0 m-0">
+                            <input class="color1" type="checkbox" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                        </div>
+                        <div class="form-check form-check-inline p-0 m-0">
+                            <input class="color2" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                        </div>
+                        <div class="form-check form-check-inline p-0 m-0">
+                            <input class="color3" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                        </div>
+                        <div class="form-check form-check-inline p-0 m-0">
+                            <input class="color4" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                        </div>
+                        <div class="form-check form-check-inline p-0 m-0">
+                            <input class="color5" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                        </div>
+                        <div class="form-check form-check-inline p-0 m-0">
+                            <input class="color6" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="m-4 size">
+                        <h5 class="text-medium">Sizes</h5>
+                        <div class="d-flex">
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <span>XS</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>S</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>M</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>L</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>XL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="m-4 form-check-category">
+                        <h5 class="text-medium">Category</h5>
+                        <div class="d-flex flex-wrap">
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <span>All</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>Women</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>Men</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>Boys</span>
+                            </div>
+                            <div class="form-check p-0 m-0">
+                                <input class="" type="checkbox" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <span>Girls</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="m-4">
+                        <h5 class="text-medium">Brand</h5>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Brand</option>
+                            <option value="1">Adidas Originals</option>
+                            <option value="2">Jack & Jones</option>
+                            <option value="3">s.Oliver</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-around">
+                    <button type="button" class="col-5 btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="col-5 btn btn-danger rounded-pill px-4">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

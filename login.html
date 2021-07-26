@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+    <title>Blanja</title>
+</head>
+
+<body>
+    <main class="mt-4">
+        <section>
+            <div class="container">
+                <div class="col-12 col-md-6 col-xl-4 mx-auto">
+                    <div class="d-block d-md-none mb-5">
+                        <a href="./index.html" class="link-dark"><span class="material-icons-outlined">arrow_back_ios</span></a>
+                        <h1 class="mt-4 text-bold">Login</h1>
+                    </div>
+                    <div class="d-none d-md-block my-5">
+                        <a href="./index.html"><img class="mx-auto d-block" src="./assets/img/logo.png" alt=""></a>
+                        <h6 class="text-center mt-4 text-bold">Please login with your account</h6 class="text-center ">
+                    </div>
+                    <form action="./bag.html" class="row g-3 needs-validation" novalidate>
+                        <div class="btn-group col-9 mx-auto mt-3 mb-5" role="group"
+                            aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                            <label class="btn btn-outline-danger col-6" for="btnradio1">Custommer</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-danger col-6" for="btnradio2">Seller</label>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" id="email" required placeholder="Email"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control" id="password" required placeholder="Password">
+                        </div>
+                        <a href="#" class="nav-link link-dark d-flex justify-content-end"><small>Forgot your password?</small><span class="material-icons text-danger">arrow_right_alt</span></a>
+
+                        <div class="col-12 mt-4">
+                            <div class="d-grid gap-2">
+                                <button class="btn rounded-pill bg-red text-white" type="submit">LOGIN</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="d-none d-md-block">
+        <h6 class="text-center p-3">copyright<span class="material-icons-outlined">copyright</span>Belanja-2021</h6>
+    </footer>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
