@@ -26,6 +26,9 @@ gh repo clone Gustiana882/forntend-html-css-js
 run index.html in browser
 ```
 
+## Demo App
+[frontend-blanja.netlify.app](http://frontend-blanja.netlify.app/)
+
 🌟 You are all set!
 
 ## 💻 Built with
